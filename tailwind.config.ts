@@ -8,6 +8,16 @@ const config: Config = {
     "./node_modules/flowbite-react/**/*.js",
   ],
   plugins: [require("flowbite/plugin")],
-  theme: {},
+  theme: {
+    extend: {
+      colors: {
+        blue: "#3B82F6",
+        gray: "#64748B",
+      },
+      container: {
+        center: true,
+      },
+    },
+  },
 };
 export default config;
