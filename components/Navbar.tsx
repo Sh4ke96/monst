@@ -5,7 +5,7 @@ import { Button } from "@/components/index";
 
 const Navbar = () => {
   return (
-    <header className="bg-white w-full">
+    <header className="bg-transparent relative z-10 shadow-sm">
       <nav className="container h-20 flex items-center">
         <div className="flex flex-wrap items-center justify-between py-4 gap-x-12 w-full">
           <Link href="/" className="flex items-center">
