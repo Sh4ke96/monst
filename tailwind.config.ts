@@ -13,6 +13,7 @@ const config: Config = {
       colors: {
         blue: "#3B82F6",
         gray: "#64748B",
+        lightGray: "#F1F5F9",
       },
       container: {
         center: true,

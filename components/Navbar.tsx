@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <header className="bg-white w-full">
       <nav className="container h-20 flex items-center">
-        <div className="flex flex-wrap items-center justify-between p-4 gap-x-12 w-full">
+        <div className="flex flex-wrap items-center justify-between py-4 gap-x-12 w-full">
           <Link href="/" className="flex items-center">
             <Image
               src="/img/monst-logo.svg"
@@ -17,8 +17,22 @@ const Navbar = () => {
             />
           </Link>
           <div className="flex md:order-2 gap-x-8">
-            <Button type="button">Log In</Button>
-            <Button type="button">Sign Up</Button>
+            <Button
+              type="button"
+              color="secondary"
+              border="outline-blue"
+              textColor="blue"
+            >
+              Log In
+            </Button>
+            <Button
+              type="button"
+              color="primary"
+              border="base"
+              textColor="white"
+            >
+              Sign Up
+            </Button>
           </div>
           <div
             className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
