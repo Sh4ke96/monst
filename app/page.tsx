@@ -22,7 +22,7 @@ export default function Home() {
                 <p className="mb-8 text-gray/50">
                   Helping you maximize operations management with digitization
                 </p>
-                <div className="flex gap-x-4">
+                <div className="flex justify-center lg:justify-normal gap-x-4">
                   <Button
                     type="button"
                     color="primary"
@@ -43,7 +43,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-1/2 px-3 lg:bg-lightGray mb-12 lg:mb-0 pb-10">
+          <div className="flex justify-center lg:justify-normal w-full lg:w-1/2 px-3 lg:bg-lightGray mb-12 lg:mb-0 pb-10">
             <Image
               src="/img/hero.svg"
               alt="people eating"
