@@ -15,6 +15,9 @@ const config: Config = {
         gray: "#64748B",
         lightGray: "#F1F5F9",
       },
+      lineHeight: {
+        3: "2.2rem",
+      },
       container: {
         center: true,
         padding: {

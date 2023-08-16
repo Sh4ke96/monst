@@ -2,7 +2,10 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["500", "600", "700"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "500", "600", "700"],
+});
 
 import { Navbar } from "@/components/index";
 
