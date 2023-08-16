@@ -68,7 +68,7 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full lg:w-1/3">
-              <p className="text-gray/50 leading-8">
+              <p className="text-gray/50 leading-8 text-center lg:text-left">
                 Business solution company sit our any how site used the our
                 company any site us it-solve theme is very professional theme
                 business & corporate, finance, advisor, solution, company and

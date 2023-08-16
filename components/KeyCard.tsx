@@ -8,7 +8,7 @@ interface KeyCardProps {
 
 const KeyCard: FC<KeyCardProps> = ({ icon, title, text }) => {
   return (
-    <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
+    <div className="w-full md:w-1/2 lg:w-1/4 sm:px-4 mb-6">
       <div className="border border-gray/20 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500">
         <svg
           className="w-8 h-8 mx-auto mb-4 text-blue"
