@@ -18,6 +18,9 @@ const config: Config = {
       lineHeight: {
         3: "2.2rem",
       },
+      screens: {
+        "2xl": "1200px",
+      },
       container: {
         center: true,
         padding: {
