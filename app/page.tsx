@@ -1,6 +1,10 @@
+"use client";
 import Image from "next/image";
 
 import { Button, KeyCard } from "@/components/index";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 export default function Home() {
   return (
@@ -209,6 +213,64 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="container my-24">
+          <div className="flex flex-col lg:flex-row gap-x-16">
+            <div className="w-full lg:w-1/3">
+              <div className="max-w-lg lg:max-w-md mx-auto lg:mx-0 text-center lg:text-left">
+                <h2 className="leading-3 text-3xl lg:text-4xl font-bold text-black">
+                  Simple
+                  <br />
+                  Solution for <br />{" "}
+                  <span className="text-blue">Complex </span> <br />
+                  Connections
+                </h2>
+                <p className="text-gray/50 leading-8 text-center lg:text-left my-8 font-light">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  luctus eget justo et iaculis.
+                </p>
+              </div>
+            </div>
+            <div className="w-full lg:w-2/3">
+              <Swiper
+                onSlideChange={() => console.log("slide change")}
+                onSwiper={(swiper) => console.log(swiper)}
+              >
+                <SwiperSlide>
+                  <Image
+                    className="rounded-lg"
+                    src="/img/slider/slide-1.png"
+                    alt="slide1"
+                    width={855}
+                    height={440}
+                    quality={100}
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    className="rounded-lg"
+                    src="/img/slider/slide-2.png"
+                    alt="slide1"
+                    width={855}
+                    height={440}
+                    quality={100}
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    className="rounded-lg"
+                    src="/img/slider/slide-3.png"
+                    alt="slide1"
+                    width={855}
+                    height={440}
+                    quality={100}
+                  />
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
         </div>
