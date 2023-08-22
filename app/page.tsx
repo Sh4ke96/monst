@@ -136,6 +136,83 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section>
+        <div className="container mt-24">
+          <div className="flex flex-col lg:flex-row">
+            <div className="w-full lg:w-1/2">
+              <div className="max-w-lg lg:max-w-md mx-auto lg:mx-0 text-center lg:text-left">
+                <h2 className="leading-3 text-3xl lg:text-4xl font-bold text-black">
+                  Great Things In <br />
+                  Business Are <span className="text-blue">Never Done </span>
+                  By One Person.
+                </h2>
+                <p className="text-gray/50 leading-8 text-center lg:text-left my-8 font-light">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                  sagittis, quam nec venenatis lobortis, mi risus tempus nulla,
+                  sed porttitor est nibh at nulla. Praesent placerat enim ut ex
+                  tincidunt vehicula. Fusce sit amet dui tellus.
+                </p>
+                <Button
+                  type="button"
+                  color="primary"
+                  textColor="white"
+                  border="base"
+                >
+                  Learn More
+                </Button>
+              </div>
+            </div>
+            <div className="w-full mt-8 lg:w-1/2 lg:mt-0">
+              <div className="flex flex-col gap-y-12">
+                <div className="flex gap-x-8">
+                  <div>
+                    <span className="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-blue/20 text-blue">
+                      1
+                    </span>
+                  </div>
+                  <div className="flex flex-col mt-4">
+                    <h3 className="text-black text-xl">
+                      Project Initialization
+                    </h3>
+                    <p className="text-gray/50 leading-8 text-left mt-4 font-light">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+                      <br /> Sed luctus eget justo et iaculis.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-x-8">
+                  <div>
+                    <span className="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-blue/20 text-blue">
+                      2
+                    </span>
+                  </div>
+                  <div className="flex flex-col mt-4">
+                    <h3 className="text-black text-xl">Looking for Creative</h3>
+                    <p className="text-gray/50 leading-8 text-left mt-4 font-light">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+                      <br /> Sed luctus eget justo et iaculis.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-x-8">
+                  <div>
+                    <span className="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-blue/20 text-blue">
+                      3
+                    </span>
+                  </div>
+                  <div className="flex flex-col mt-4">
+                    <h3 className="text-black text-xl">Market Development</h3>
+                    <p className="text-gray/50 leading-8 text-left mt-4 font-light">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+                      <br /> Sed luctus eget justo et iaculis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
