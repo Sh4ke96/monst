@@ -237,7 +237,7 @@ export default function Home() {
                   luctus eget justo et iaculis.
                 </p>
               </div>
-              <div className="flex gap-x-8">
+              <div className="flex gap-x-8 mb-8 justify-center lg:mb-0 lg:justify-normal">
                 <button className="slider-prev">
                   <span>
                     <svg
