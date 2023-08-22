@@ -4,7 +4,10 @@ import Image from "next/image";
 import { Button, KeyCard } from "@/components/index";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, EffectFade } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
 
 export default function Home() {
   return (
@@ -234,11 +237,57 @@ export default function Home() {
                   luctus eget justo et iaculis.
                 </p>
               </div>
+              <div className="flex gap-x-8">
+                <button className="slider-prev">
+                  <span>
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="#3B82F6"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M7 16l-4-4m0 0l4-4m-4 4h18"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+                <button className="slider-next">
+                  <span>
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="#3B82F6"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
             </div>
             <div className="w-full lg:w-2/3">
               <Swiper
-                onSlideChange={() => console.log("slide change")}
-                onSwiper={(swiper) => console.log(swiper)}
+                modules={[Navigation, EffectFade]}
+                effect={"fade"}
+                navigation={{
+                  enabled: true,
+                  prevEl: ".slider-prev",
+                  nextEl: ".slider-next",
+                }}
+                loop={true}
+                autoplay={true}
+                keyboard={{ enabled: true }}
               >
                 <SwiperSlide>
                   <Image
