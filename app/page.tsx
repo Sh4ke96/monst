@@ -331,10 +331,10 @@ export default function Home() {
               Choose Your <br />
               <span className="text-blue">Best</span> Pricing Plan
             </h2>
-            <p className="text-base text-gray/50 font-light">
+            <p className="text-base text-gray/50 font-light text-center">
               Great Things In Business Are Never Done By One Person
             </p>
-            <div className="flex gap-x-16">
+            <div className="flex lg:gap-x-16 lg:flex-row flex-col gap-y-4">
               <label className="flex items-center gap-x-4">
                 <input type="radio" name="billing" value={1} />
                 <p>Monthly Billing</p>
@@ -351,8 +351,8 @@ export default function Home() {
               </label>
             </div>
           </div>
-          <div className="flex my-8 mx-16">
-            <div className="w-full md:w-1/2 lg:w-2/5 bg-white px-4 py-8 rounded-l-xl">
+          <div className="flex my-8 lg:mx-16 md:flex-row flex-col">
+            <div className="w-full md:w-1/2 lg:w-2/5 bg-white px-4 py-8 lg:rounded-l-xl">
               <div className="text-center">
                 <p className="text-gray/50 font-light">Sign In</p>
                 <h4 className="mb-6 text-2xl text-black font-bold">
@@ -423,7 +423,7 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="relative w-full md:w-1/2 lg:w-3/5 bg-blue rounded-r-xl">
+            <div className="relative w-full md:w-1/2 lg:w-3/5 bg-blue lg:rounded-r-xl">
               <div className="max-w-sm px-12 pt-12">
                 <span className="text-xs text-white mb-4 block">
                   Various Analysis Options
