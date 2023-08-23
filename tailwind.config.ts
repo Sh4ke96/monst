@@ -21,6 +21,9 @@ const config: Config = {
       screens: {
         "2xl": "1200px",
       },
+      backgroundImage: {
+        home: "url('/img/home-bg.svg')",
+      },
       container: {
         center: true,
         padding: {
