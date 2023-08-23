@@ -325,7 +325,7 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="container bg-home py-16 bg-no-repeat xl:bg-contain bg-top">
+        <div className="container bg-home py-16 bg-no-repeat bg-cover bg-top">
           <div className="flex flex-col items-center gap-y-8">
             <h2 className="text-3xl text-black font-bold leading-3 text-center">
               Choose Your <br />
@@ -351,8 +351,8 @@ export default function Home() {
               </label>
             </div>
           </div>
-          <div className="flex my-8 shadow-md mx-16">
-            <div className="w-full md:w-1/2 lg:w-2/5 bg-white px-4 py-8">
+          <div className="flex my-8 mx-16">
+            <div className="w-full md:w-1/2 lg:w-2/5 bg-white px-4 py-8 rounded-l-xl">
               <div className="text-center">
                 <p className="text-gray/50 font-light">Sign In</p>
                 <h4 className="mb-6 text-2xl text-black font-bold">
@@ -417,22 +417,30 @@ export default function Home() {
                   color="primary"
                   textColor="white"
                   border="base"
+                  width="full"
                 >
                   Purchase Now
                 </Button>
               </div>
             </div>
-            <div className="relative w-full md:w-1/2 lg:w-3/5 bg-blue">
+            <div className="relative w-full md:w-1/2 lg:w-3/5 bg-blue rounded-r-xl">
               <div className="max-w-sm px-12 pt-12">
-                <span className="text-xs text-blue-200">
+                <span className="text-xs text-white mb-4 block">
                   Various Analysis Options
                 </span>
-                <h3 className="mb-4 text-4xl font-bold font-heading text-white">
+                <h3 className="mb-4 text-4xl font-bold text-white">
                   Techno Provides Realtime Best Data Solutions.
                 </h3>
               </div>
               <div className="absolute right-0 bottom-0">
-                <div className="flex items-center h-full"></div>
+                <div className="flex items-center h-full">
+                  <Image
+                    src="/img/online-shopping.png"
+                    alt="online shopping"
+                    width={180}
+                    height={320}
+                  />
+                </div>
               </div>
             </div>
           </div>

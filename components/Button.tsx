@@ -18,18 +18,24 @@ const ButtonVariants = tv({
       blue: "text-blue",
       gray: "text-gray",
     },
+    width: {
+      fit: "w-fit",
+      full: "w-full",
+    },
   },
 });
 
 type ButtonColor = "primary" | "secondary";
 type ButtonBorder = "base" | "outline-blue" | "outline-gray";
 type ButtonTextColor = "white" | "blue" | "gray";
+type ButtonWidth = "fit" | "full";
 interface ButtonProps {
   type: "submit" | "reset" | "button" | undefined;
   children: React.ReactNode;
   color: ButtonColor;
   textColor: ButtonTextColor;
   border: ButtonBorder;
+  width?: ButtonWidth;
   disabled?: boolean;
   onClick?: () => void;
 }
@@ -42,8 +48,9 @@ const Button: FC<ButtonProps> = ({
   color,
   textColor,
   border,
+  width,
 }) => {
-  const classNames = ButtonVariants({ border, color, textColor });
+  const classNames = ButtonVariants({ border, color, textColor, width });
   return (
     <button
       type={type}
