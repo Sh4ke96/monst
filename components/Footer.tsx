@@ -3,6 +3,8 @@ import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { Button } from "@/components/index";
+
 const Footer: FC = () => {
   return (
     <footer>
@@ -24,169 +26,200 @@ const Footer: FC = () => {
                   Subscribe and stay fully connected with product.
                 </p>
                 <div className="flex flex-wrap lg:flex-nowrap items-center">
-                  <div className="">
+                  <div className="relative mr-4 lg:mr-8 basis-2/3">
                     <svg
-                      className="h-6 w-6 my-auto"
+                      className="h-6 w-6 my-auto absolute bottom-1/2 translate-y-1/2 right-4"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
-                      fill="currentColor"
+                      fill="#3B82F6"
                     >
                       <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                       <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                     </svg>
                     <input
-                      className="w-full py-4 pl-3 text-xs text-blueGray-400 bg-blueGray-50 outline-none"
+                      className="w-full py-4 text-xs placeholder-gray/50 font-semibold leading-none bg-gray/10 rounded-md border-none text-blue outline-none"
                       type="text"
                       placeholder="Type your e-mail"
                     />
                   </div>
-                  <button
-                    className="hover-up-2 w-full lg:w-auto py-4 px-8 lg:ml-6 text-xs text-white font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
+                  <Button
                     type="submit"
+                    color="primary"
+                    textColor="white"
+                    border="base"
+                    width="fit"
                   >
-                    Sign Up
-                  </button>
+                    Submit
+                  </Button>
                 </div>
               </div>
               <div className="hidden lg:block">
-                <p className="text-xs text-blueGray-400">
-                  © 2021. All rights reserved.
+                <p className="text-xs text-gray/50">
+                  © 2023. All rights reserved.
                 </p>
                 <div className="-mx-2 mt-4">
-                  <a className="inline-block px-2" href="#">
-                    <img src="assets/imgs/icons/facebook-blue.svg" alt="" />
-                  </a>
-                  <a className="inline-block px-2" href="#">
-                    <img src="assets/imgs/icons/twitter-blue.svg" alt="" />
-                  </a>
-                  <a className="inline-block px-2" href="#">
-                    <img src="assets/imgs/icons/instagram-blue.svg" alt="" />
-                  </a>
+                  <Link className="inline-block px-2" href="#">
+                    <Image
+                      src="/img/facebook-blue.svg"
+                      alt="facebook-logo"
+                      width={24}
+                      height={24}
+                    />
+                  </Link>
+                  <Link className="inline-block px-2" href="#">
+                    <Image
+                      src="/img/twitter-blue.svg"
+                      width={24}
+                      height={24}
+                      alt="twitter logo"
+                    />
+                  </Link>
+                  <Link className="inline-block px-2" href="#">
+                    <Image
+                      src="/img/instagram-blue.svg"
+                      width={24}
+                      height={24}
+                      alt="instagram logo"
+                    />
+                  </Link>
                 </div>
               </div>
             </div>
-            <div className="relative w-full lg:w-1/2 px-4 pt-40 lg:pl-12">
+            <div className="relative w-full lg:w-1/2 px-4 lg:pt-40 lg:pl-12">
               <div className="flex flex-row flex-wrap justify-around mb-12">
                 <div className="w-1/2 lg:w-auto mb-12">
-                  <h5 className="mb-6 text-lg font-bold font-heading">About</h5>
+                  <h5 className="mb-6 text-lg font-bold">About</h5>
                   <ul className="space-y-3">
                     <li>
-                      <a
-                        className="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="about.html"
+                      <Link
+                        className="text-lg text-gray hover:text-gray/50 font-light"
+                        href="/about"
                       >
                         About us
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        className="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="portfolio.html"
+                      <Link
+                        className="text-lg text-gray hover:text-gray/50 font-light"
+                        href="/portfolio"
                       >
                         Portfolio
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        className="text-lg text-blueGray-400 hover:text-blueGray-500"
+                      <Link
+                        className="text-lg text-gray hover:text-gray/50 font-light"
                         href="services.html"
                       >
                         Services
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        className="text-lg text-blueGray-400 hover:text-blueGray-500"
+                      <Link
+                        className="text-lg text-gray hover:text-gray/50 font-light"
                         href="contact.html"
                       >
                         Contact
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
                 <div className="w-1/2 lg:w-auto mb-12">
-                  <h5 className="mb-6 text-lg font-bold font-heading">
-                    Quick links
-                  </h5>
+                  <h5 className="mb-6 text-lg font-bold">Quick links</h5>
                   <ul className="space-y-3">
                     <li>
-                      <a
-                        className="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="team.html"
+                      <Link
+                        className="text-lg text-gray hover:text-gray/50 font-light"
+                        href="/team"
                       >
                         Team
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        className="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="pricing.html"
+                      <Link
+                        className="text-lg text-gray hover:text-gray/50 font-light"
+                        href="/pricing"
                       >
                         Pricing
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        className="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="testimonials.html"
+                      <Link
+                        className="text-lg text-gray hover:text-gray/50 font-light"
+                        href="/testimonials"
                       >
                         Testimonials
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        className="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="faqs.html"
+                      <Link
+                        className="text-lg text-gray hover:text-gray/50 font-light"
+                        href="/faq"
                       >
                         Faqs
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
                 <div className="w-full lg:w-auto mb-4">
-                  <h5 className="mb-6 text-lg font-bold font-heading">Blog</h5>
+                  <h5 className="mb-6 text-lg font-bold">Blog</h5>
                   <ul className="space-y-3">
                     <li>
-                      <a
-                        className="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="blog.html"
+                      <Link
+                        className="text-lg text-gray hover:text-gray/50 font-light"
+                        href="/blog"
                       >
                         Bussiness
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        className="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="blog-2.html"
+                      <Link
+                        className="text-lg text-gray hover:text-gray/50 font-light"
+                        href="/blog"
                       >
                         Marketing
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        className="text-lg text-blueGray-400 hover:text-blueGray-500"
-                        href="blog-single.html"
+                      <Link
+                        className="text-lg text-gray hover:text-gray/50 font-light"
+                        href="/blog"
                       >
                         Single
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
               </div>
               <div className="lg:hidden text-center">
-                <p className="text-xs text-blueGray-400">
-                  © 2021. All rights reserved.
+                <p className="text-xs text-gray">
+                  © 2023. All rights reserved.
                 </p>
                 <div className="-mx-2 mt-4">
-                  <a className="inline-block px-2" href="#">
-                    <img src="assets/imgs/icons/facebook-blue.svg" alt="" />
-                  </a>
-                  <a className="inline-block px-2" href="#">
-                    <img src="assets/imgs/icons/twitter-blue.svg" alt="" />
-                  </a>
-                  <a className="inline-block px-2" href="#">
-                    <img src="assets/imgs/icons/instagram-blue.svg" alt="" />
-                  </a>
+                  <Link className="inline-block px-2" href="#">
+                    <Image
+                      src="/img/facebook-blue.svg"
+                      alt="facebook-logo"
+                      width={24}
+                      height={24}
+                    />
+                  </Link>
+                  <Link className="inline-block px-2" href="#">
+                    <Image
+                      src="/img/twitter-blue.svg"
+                      width={24}
+                      height={24}
+                      alt="twitter logo"
+                    />
+                  </Link>
+                  <Link className="inline-block px-2" href="#">
+                    <Image
+                      src="/img/instagram-blue.svg"
+                      width={24}
+                      height={24}
+                      alt="instagram logo"
+                    />
+                  </Link>
                 </div>
               </div>
             </div>
