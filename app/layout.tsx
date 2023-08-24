@@ -7,7 +7,7 @@ const poppins = Poppins({
   weight: ["300", "500", "600", "700"],
 });
 
-import { Navbar } from "@/components/index";
+import { Navbar, Footer } from "@/components/index";
 
 export const metadata: Metadata = {
   title: "Monst - SAAS Landing",
@@ -24,6 +24,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         <Navbar />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
