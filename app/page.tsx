@@ -520,6 +520,86 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="container my-16">
+          <form className="mx-48">
+            <div className="mb-4 text-sm">
+              <span className="mr-4">Departament:</span>
+              <label className="mr-4">
+                <input
+                  className="mr-1"
+                  type="radio"
+                  name="department"
+                  value="1"
+                />
+                <span>Support</span>
+              </label>
+              <label>
+                <input
+                  className="mr-1"
+                  type="radio"
+                  name="department"
+                  value="2"
+                />
+                <span>Sales</span>
+              </label>
+            </div>
+            <div className="flex flex-wrap mb-4 -mx-3 wow animate__ animate__fadeInUp animated animated">
+              <div className="w-full lg:w-1/2 px-3 mb-4 lg:mb-0">
+                <div className="mb-4">
+                  <input
+                    className="w-full py-4 text-xs placeholder-gray/50 font-semibold leading-none bg-gray/10 rounded-md border-none text-blue outline-none"
+                    type="text"
+                    placeholder="Subject"
+                  />
+                </div>
+                <div className="mb-4">
+                  <input
+                    className="w-full py-4 text-xs placeholder-gray/50 font-semibold leading-none bg-gray/10 rounded-md border-none text-blue outline-none"
+                    type="text"
+                    placeholder="Name"
+                  />
+                </div>
+                <div className="mb-4">
+                  <input
+                    className="w-full py-4 text-xs placeholder-gray/50 font-semibold leading-none bg-gray/10 rounded-md border-none text-blue outline-none"
+                    type="email"
+                    placeholder="name@example.com"
+                  />
+                </div>
+                <div>
+                  <label className="flex px-2 bg-gray/10 rounded">
+                    <input className="hidden" type="file" name="Choose file" />
+                    <span className="my-1 ml-auto px-4 py-3 text-xs text-white leading-none bg-gray hover:bg-blueGray-600 rounded cursor-pointer">
+                      {" "}
+                      Browse
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div className="w-full lg:w-1/2 px-3">
+                <textarea
+                  className="w-full h-full py-4 text-xs placeholder-gray/50 font-semibold leading-none bg-gray/10 rounded-md border-none text-blue outline-none"
+                  placeholder="Message..."
+                ></textarea>
+              </div>
+            </div>
+            <div className="flex justify-between items-center">
+              <label className="mb-8 inline-block">
+                <input type="checkbox" name="terms" value="1" />
+                <span className="ml-2">I agree to terms and conditions.</span>
+              </label>
+              <Button
+                type="submit"
+                color="primary"
+                textColor="white"
+                border="base"
+                width="fit"
+              >
+                Submit
+              </Button>
+            </div>
+          </form>
+        </div>
       </section>
     </>
   );
