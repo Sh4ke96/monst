@@ -454,7 +454,7 @@ export default function Home() {
               We will be glad to hear from you
             </p>
           </div>
-          <div className="flex justify-center my-8 gap-x-16">
+          <div className="flex flex-col gap-y-4 lg:gap-y-0 lg:flex-row justify-center my-8 gap-x-16">
             <div className="flex flex-col items-center justify-center">
               <svg
                 className="mb-6 h-8 w-8 mx-auto text-blue-600"
@@ -521,7 +521,7 @@ export default function Home() {
           </div>
         </div>
         <div className="container my-16">
-          <form className="mx-48">
+          <form className="lg:mx-48">
             <div className="mb-4 text-sm">
               <span className="mr-4">Departament:</span>
               <label className="mr-4">
