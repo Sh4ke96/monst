@@ -1,11 +1,29 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 
 import { Button } from "@/components/index";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const [isSticky, setSticky] = useState(false);
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    setSticky(currentScrollY > 0);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="bg-transparent relative z-10 shadow-sm">
+    <header
+      className={`${
+        isSticky ? "fixed top-0 shadow-sm" : ""
+      } w-full z-10 transition-all bg-white duration-300`}
+    >
       <nav className="container h-20 flex items-center">
         <div className="flex items-center justify-between px-4 md:px-0 py-4 gap-x-12 w-full">
           <Link href="/" className="flex items-center">
