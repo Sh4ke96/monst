@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 import { Button, KeyCard } from "@/components/index";
 
@@ -31,22 +32,26 @@ export default function Home() {
                     Helping you maximize operations management with digitization
                   </p>
                   <div className="flex justify-center lg:justify-normal gap-x-4">
-                    <Button
-                      type="button"
-                      color="primary"
-                      textColor="white"
-                      border="base"
-                    >
-                      Key features
-                    </Button>
-                    <Button
-                      type="button"
-                      color="secondary"
-                      textColor="gray"
-                      border="outline-gray"
-                    >
-                      How We Work?
-                    </Button>
+                    <Link href="/#features">
+                      <Button
+                        type="button"
+                        color="primary"
+                        textColor="white"
+                        border="base"
+                      >
+                        Key features
+                      </Button>
+                    </Link>
+                    <Link href="/#work">
+                      <Button
+                        type="button"
+                        color="secondary"
+                        textColor="gray"
+                        border="outline-gray"
+                      >
+                        How We Work?
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -62,8 +67,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
-        <div className="container mt-16">
+      <section id="features" className="pt-24">
+        <div className="container mt-24">
           <div className="flex flex-wrap items-center gap-y-4 lg:gap-y-0">
             <div className="w-full lg:w-1/2">
               <div className="max-w-lg lg:max-w-md mx-auto lg:mx-0 text-center lg:text-left">
@@ -143,7 +148,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <section id="work" className="pt-24">
         <div className="container mt-24">
           <div className="flex flex-col lg:flex-row">
             <div className="w-full lg:w-1/2">
