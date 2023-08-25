@@ -67,19 +67,19 @@ const Navbar = () => {
                 <Link href="/">Home</Link>
               </li>
               <li className="text-sm">
-                <Link href="/">About Us</Link>
+                <Link href="/about">About Us</Link>
               </li>
               <li className="text-sm">
-                <Link href="/">Services</Link>
+                <Link href="/services">Services</Link>
               </li>
               <li className="text-sm">
-                <Link href="/">Company</Link>
+                <Link href="/company">Company</Link>
               </li>
               <li className="text-sm">
-                <Link href="/">Blog</Link>
+                <Link href="/blog">Blog</Link>
               </li>
               <li className="text-sm">
-                <Link href="/">Contact</Link>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
           </div>
