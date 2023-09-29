@@ -2,7 +2,7 @@ import { FC } from "react";
 import { tv } from "tailwind-variants";
 
 const ButtonVariants = tv({
-  base: "bg-blue text-sm w-fit h-fit text-white font-medium px-4 py-3 rounded-xl",
+  base: "bg-blue text-sm w-fit h-fit text-white font-medium px-4 py-3 rounded-xl transition duration-200 ease-in-out hover:scale-105",
   variants: {
     color: {
       primary: "bg-blue",
