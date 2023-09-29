@@ -73,22 +73,26 @@ const Navbar = () => {
             </svg>
           </button>
           <div className="md:order-2 gap-x-8 hidden lg:flex">
-            <Button
-              type="button"
-              color="secondary"
-              border="outline-blue"
-              textColor="blue"
-            >
-              Log In
-            </Button>
-            <Button
-              type="button"
-              color="primary"
-              border="base"
-              textColor="white"
-            >
-              Sign Up
-            </Button>
+            <Link href="/login">
+              <Button
+                type="button"
+                color="secondary"
+                border="outline-blue"
+                textColor="blue"
+              >
+                Log In
+              </Button>
+            </Link>
+            <Link href="/register">
+              <Button
+                type="button"
+                color="primary"
+                border="base"
+                textColor="white"
+              >
+                Sign Up
+              </Button>
+            </Link>
           </div>
           <div
             className="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
@@ -163,43 +167,59 @@ const Navbar = () => {
                     </button>
                   </div>
                   <li className="text-lg">
-                    <Link href="/">Home</Link>
+                    <Link href="/" onClick={handleOpenMenu}>
+                      Home
+                    </Link>
                   </li>
                   <li className="text-lg">
-                    <Link href="/about">About Us</Link>
+                    <Link href="/about" onClick={handleOpenMenu}>
+                      About Us
+                    </Link>
                   </li>
                   <li className="text-lg">
-                    <Link href="/services">Services</Link>
+                    <Link href="/services" onClick={handleOpenMenu}>
+                      Services
+                    </Link>
                   </li>
                   <li className="text-lg">
-                    <Link href="/company">Company</Link>
+                    <Link href="/company" onClick={handleOpenMenu}>
+                      Company
+                    </Link>
                   </li>
                   <li className="text-lg">
-                    <Link href="/blog">Blog</Link>
+                    <Link href="/blog" onClick={handleOpenMenu}>
+                      Blog
+                    </Link>
                   </li>
                   <li className="text-lg">
-                    <Link href="/contact">Contact</Link>
+                    <Link href="/contact" onClick={handleOpenMenu}>
+                      Contact
+                    </Link>
                   </li>
                 </ul>
                 <div className="flex flex-col gap-y-4 py-8 mx-8 border-t border-gray/20">
-                  <Button
-                    type="button"
-                    color="secondary"
-                    border="outline-blue"
-                    textColor="blue"
-                    width="full"
-                  >
-                    Log In
-                  </Button>
-                  <Button
-                    type="button"
-                    color="primary"
-                    border="base"
-                    textColor="white"
-                    width="full"
-                  >
-                    Sign Up
-                  </Button>
+                  <Link href="/login" onClick={handleOpenMenu}>
+                    <Button
+                      type="button"
+                      color="secondary"
+                      border="outline-blue"
+                      textColor="blue"
+                      width="full"
+                    >
+                      Log In
+                    </Button>
+                  </Link>
+                  <Link href="/register" onClick={handleOpenMenu}>
+                    <Button
+                      type="button"
+                      color="primary"
+                      border="base"
+                      textColor="white"
+                      width="full"
+                    >
+                      Sign Up
+                    </Button>
+                  </Link>
                 </div>
                 <div className="px-8">
                   <p className="my-4 text-xs text-blueGray-400">
