@@ -35,7 +35,7 @@ const Navbar = () => {
     <header
       className={`${
         isSticky ? "fixed top-0 shadow-sm" : ""
-      } w-full z-10 transition-all bg-white duration-300`}
+      } w-full z-10 transition-all bg-white duration-300 animate__animated animate__fadeInDown`}
     >
       <nav className="container h-20 flex items-center">
         <div className="flex items-center justify-between px-4 md:px-0 py-4 gap-x-12 w-full">

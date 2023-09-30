@@ -3,12 +3,13 @@ import "animate.css";
 
 import { Button } from "@/components";
 import Image from "next/image";
+import Link from "next/link";
 
 const RegisterPage: FC = () => {
   return (
     <section className="bg-blue/10">
       <div className="container py-16">
-        <div className="mx-auto mt-12 mb-8 p-8 bg-white rounded-xl shadow-lg max-w-lg">
+        <div className="mx-auto mt-12 mb-8 p-8 bg-white rounded-xl shadow-lg max-w-lg animate__animated animate__fadeIn">
           <h4 className="mb-6 text-3xl text-center">Create an Account</h4>
           <div className="flex mb-6 px-4 relative">
             <input
@@ -24,9 +25,9 @@ const RegisterPage: FC = () => {
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
               ></path>
             </svg>
@@ -45,9 +46,9 @@ const RegisterPage: FC = () => {
               stroke="currentColor"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
               ></path>
             </svg>
@@ -67,15 +68,15 @@ const RegisterPage: FC = () => {
                 stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
                 ></path>
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
                 ></path>
               </svg>
@@ -96,15 +97,15 @@ const RegisterPage: FC = () => {
                 stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
                 ></path>
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
                 ></path>
               </svg>
@@ -115,13 +116,19 @@ const RegisterPage: FC = () => {
               <input type="checkbox" className="form-checkbox" />
               <span className="ml-2">
                 I agree to{" "}
-                <a className="underline hover:text-blueGray-500" href="#">
+                <Link
+                  href="/privacy"
+                  className="underline hover:text-blueGray-500"
+                >
                   Police privacy
-                </a>{" "}
+                </Link>{" "}
                 and{" "}
-                <a className="underline hover:text-blueGray-500" href="#">
+                <Link
+                  href="/terms"
+                  className="underline hover:text-blueGray-500"
+                >
                   Terms of Use
-                </a>
+                </Link>
               </span>
             </label>
           </div>
@@ -165,15 +172,17 @@ const RegisterPage: FC = () => {
           </div>
           <div className="w-full mt-12 mx-auto text-center">
             <p className="mb-4">Already have an account?</p>
-            <Button
-              type="button"
-              color="primary"
-              width="full"
-              textColor="white"
-              border="base"
-            >
-              Sign In Now
-            </Button>
+            <Link href="/login">
+              <Button
+                type="button"
+                color="primary"
+                width="full"
+                textColor="white"
+                border="base"
+              >
+                Sign In Now
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

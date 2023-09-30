@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Button, KeyCard } from "@/components/index";
+import { Button, KeyCard, AOSComponent } from "@/components/index";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectFade } from "swiper/modules";
@@ -10,10 +10,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
+import "animate.css";
+
 export default function Home() {
   return (
-    <>
-      <section className="relative pt-24">
+    <AOSComponent>
+      <section className="relative pt-24 animate__animated animate__fadeIn animate__delay-1s">
         <div className="hidden lg:block absolute inset-0 w-1/2 ml-auto bg-lightGray -z-50"></div>
         <div className="container">
           <div className="flex flex-wrap items-center -mx-3">
@@ -67,7 +69,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="features" className="pt-24">
+      <section
+        id="features"
+        className="pt-24"
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-duration="600"
+        data-aos-once="true"
+      >
         <div className="container mt-24">
           <div className="flex flex-wrap items-center gap-y-4 lg:gap-y-0">
             <div className="w-full lg:w-1/2">
@@ -148,7 +157,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="work" className="pt-24">
+      <section
+        id="work"
+        className="pt-24"
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-duration="600"
+        data-aos-once="true"
+      >
         <div className="container mt-24">
           <div className="flex flex-col lg:flex-row">
             <div className="w-full lg:w-1/2">
@@ -225,7 +241,12 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <section
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-duration="600"
+        data-aos-once="true"
+      >
         <div className="container my-24">
           <div className="flex flex-col lg:flex-row gap-x-16">
             <div className="w-full lg:w-1/3">
@@ -329,7 +350,12 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <section
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-duration="600"
+        data-aos-once="true"
+      >
         <div className="container bg-home py-16 bg-no-repeat bg-cover bg-top">
           <div className="flex flex-col items-center gap-y-8">
             <h2 className="text-3xl text-black font-bold leading-3 text-center">
@@ -451,7 +477,12 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <section
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-duration="600"
+        data-aos-once="true"
+      >
         <div className="container my-16">
           <div className="text-center">
             <h3 className="text-black font-bold text-3xl">Get in touch!</h3>
@@ -606,6 +637,6 @@ export default function Home() {
           </form>
         </div>
       </section>
-    </>
+    </AOSComponent>
   );
 }

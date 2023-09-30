@@ -10,7 +10,7 @@ const Footer: FC = () => {
     <footer>
       <div className="relative border-t border-gray/10">
         <div className="hidden lg:block absolute inset-0 w-1/2 ml-auto bg-gray/10"></div>
-        <div className="container">
+        <div className="container animate__animated animate__fadeInUp">
           <div className="relative flex flex-wrap -mx-4">
             <div className="w-full lg:w-1/2 pt-20 px-4 max-w-lg lg:max-w-full mx-auto lg:mx-0 text-center lg:text-left">
               <Link className="inline-block mx-auto lg:ml-0 text-3xl" href="/">
